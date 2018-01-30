@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.8)
 project(C_Primer_Plus_Exercises)
 
 set(CMAKE_C_STANDARD 99)
+#set(CMAKE_VERBOSE_MAKEFILE ON)
 
-set(SOURCE_FILES ./ch03/exercise3.c)
-add_executable(cpractise ${SOURCE_FILES})
+set(function_pointer practise/function_pointer.c)
+set(thread_test practise/thread/thread_test.c)
+
+#set(SOURCE_FILES ./practise/function_pointer.c )
+add_executable(thread_test ${thread_test})
+add_executable(function_pointer ${function_pointer})
