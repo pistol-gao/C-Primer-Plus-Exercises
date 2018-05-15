@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <assert.h>
-
+/**
+ * 注意指针函数与函数指针表示方法的不同，千万不要混淆。最简单的辨别方式就是看函数名前面的指针*号有没有被括号（）包含，如果被包含就是函数指针，反之则是指针函数。
+ */
 typedef int (*FP_CALC)(int,int);//定义一个函数指针类型  
 
 int add(int a, int b)
@@ -44,7 +46,9 @@ FP_CALC calc_func(char op)
 }
 
 //s_calc_func为函数，它的参数是 op，     
-//返回值为一个拥有两个int参数、返回类型为int的函数指针    
+//返回值为一个拥有两个int参数、返回类型为int的函数指针
+//指针函数
+
 int (*s_calc_func(char op)) (int , int)
 {
     return calc_func(op);
