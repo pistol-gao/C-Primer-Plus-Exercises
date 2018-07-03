@@ -13,6 +13,7 @@ set(varible_test practise/variable_param/variable_param_test.c)
 set(kernel_test_time_after_test practise/kernel_function/time_after_test.c)
 
 set(attibute_test practise/attribute/attribute_test.c)
+set(dynamic_array_test practise/array/dynamic_array_test.c)
 
 
 
@@ -25,3 +26,4 @@ add_executable(function_pointer_in_struct ${function_pointer_in_struct})
 add_executable(varible_test ${varible_test} )
 add_executable(kernel_test_time_after_test ${kernel_test_time_after_test} practise/kernel_function/time_after_test.c)
 add_executable(attribute_test ${attibute_test} practise/attribute/attribute_test.c)
+add_executable(dynamic_array_test ${dynamic_array_test})
